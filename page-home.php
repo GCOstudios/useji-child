@@ -16,7 +16,7 @@
         <figure>
           <img src="" alt="">
           <figcaption>
-            Item Title
+            Item Title 1
             <span>£150.00</span>
           </figcaption>
         </figure>
@@ -25,7 +25,7 @@
         <figure>
           <img src="" alt="">
           <figcaption>
-            Item Title
+            Item Title 2
             <span>£150.00</span>
           </figcaption>
         </figure>
@@ -34,7 +34,7 @@
         <figure>
           <img src="" alt="">
           <figcaption>
-            Item Title
+            Item Title 3
             <span>£150.00</span>
           </figcaption>
         </figure>
@@ -43,7 +43,7 @@
         <figure>
           <img src="" alt="">
           <figcaption>
-            Item Title
+            Item Title 4
             <span>£150.00</span>
           </figcaption>
         </figure>
@@ -52,7 +52,7 @@
         <figure>
           <img src="" alt="">
           <figcaption>
-            Item Title
+            Item Title 5
             <span>£150.00</span>
           </figcaption>
         </figure>
@@ -61,7 +61,7 @@
         <figure>
           <img src="" alt="">
           <figcaption>
-            Item Title
+            Item Title 6
             <span>£150.00</span>
           </figcaption>
         </figure>
@@ -70,7 +70,7 @@
         <figure>
           <img src="" alt="">
           <figcaption>
-            Item Title
+            Item Title 7
             <span>£150.00</span>
           </figcaption>
         </figure>
@@ -79,7 +79,7 @@
         <figure>
           <img src="" alt="">
           <figcaption>
-            Item Title
+            Item Title 8
             <span>£150.00</span>
           </figcaption>
         </figure>
