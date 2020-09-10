@@ -77,6 +77,8 @@
               </nav><!-- END nav -->
             </div><!-- END #primary-navigation -->
           <?php } ?>
-          <?php wp_nav_menu( array( 'theme_location' => 'shop', 'menu_class' => 'shop-menu clearfix', 'container' => '', 'walker' => new mts_menu_walker ) ); ?>
+          <nav class="navigation">
+            <?php wp_nav_menu( array( 'theme_location' => 'shop', 'menu_class' => 'shop-menu clearfix', 'container' => '', 'walker' => new mts_menu_walker ) ); ?>
+          </nav><!-- END nav -->
         </div><!--END .container-->
 		</header>
