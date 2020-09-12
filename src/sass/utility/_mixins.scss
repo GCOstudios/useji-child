@@ -72,3 +72,20 @@
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
 }
+
+// ================================
+// Font Icons
+// ================================
+
+// Example usage:
+// .label:before {
+//   @include font-icon('\f0d2');
+// }
+
+@mixin font-icon($glyph) {
+  content: $glyph;
+  font-family: $font-icon;
+  font-smoothing: antialiased;
+  font-weight: normal;
+  speak: none;
+}
