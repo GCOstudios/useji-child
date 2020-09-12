@@ -32,7 +32,7 @@
         $header_parts = array( 'logo-section' => 'logo-section', 'main-navigation' => 'main-navigation' );
       } ?>
 
-        <div class="container clearfix">
+        <div class="container">
           <div class="logo-wrap">
             <?php if ( $mts_options['mts_logo'] != '' && $mts_logo = wp_get_attachment_image_src( $mts_options['mts_logo'], 'full' ) ) { ?>
               <?php if ( is_front_page() || is_home() || is_404() ) { ?>
@@ -66,19 +66,19 @@
           <?php if ( $mts_options['mts_show_primary_nav'] == '1' ) { ?>
             <div id="primary-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <?php if ( $mts_options['mts_show_secondary_nav'] !== '1' ) {?><a href="#" id="pull" class="toggle-mobile-menu"><?php _e('Menu', 'clean' ); ?></a><?php } ?>
-              <nav class="navigation clearfix<?php if ( $mts_options['mts_show_secondary_nav'] !== '1' ) echo ' mobile-menu-wrapper'; ?>">
+              <nav class="navigation <?php if ( $mts_options['mts_show_secondary_nav'] !== '1' ) echo ' mobile-menu-wrapper'; ?>">
                 <?php if ( has_nav_menu( 'primary' ) ) { ?>
-                  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu clearfix', 'container' => '', 'walker' => new mts_menu_walker ) ); ?>
+                  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu', 'container' => '', 'walker' => new mts_menu_walker ) ); ?>
                 <?php } else { ?>
-                  <ul class="menu clearfix">
+                  <ul class="menu">
                     <?php wp_list_pages('title_li='); ?>
                   </ul>
                 <?php } ?>
               </nav><!-- END nav -->
             </div><!-- END #primary-navigation -->
           <?php } ?>
-          <nav class="navigation">
-            <?php wp_nav_menu( array( 'theme_location' => 'shop', 'menu_class' => 'shop-menu clearfix', 'container' => '', 'walker' => new mts_menu_walker ) ); ?>
+          <nav id="shop-navigation" class="navigation">
+            <?php wp_nav_menu( array( 'theme_location' => 'shop', 'menu_class' => 'shop-menu', 'container' => '', 'walker' => new mts_menu_walker ) ); ?>
           </nav><!-- END nav -->
         </div><!--END .container-->
 		</header>
