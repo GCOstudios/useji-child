@@ -1,0 +1,38 @@
+#primary-navigation {
+  .navigation {
+    .menu {
+      display: flex;
+    }
+  }
+}
+
+#shop-navigation {
+  .shop-menu {
+    display: flex;
+
+    li {
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a {
+    color: #20303c;
+
+    &:focus,
+    &:hover {
+      color: #a749ff
+    }
+  }
+}
+
+.woo-icon {
+  font-size: 0;
+
+  .fa {
+    font-size: cre(20px);
+  }
+}

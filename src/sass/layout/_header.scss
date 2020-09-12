@@ -1,0 +1,33 @@
+// Single Product pages
+// ====================================
+.single-product {
+  #site-header {
+    border-bottom: 0;
+  }
+}
+
+// Global Header
+// ====================================
+#site-header {
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  float: none;
+
+  // Reset floats
+  * {
+    float: none;
+  }
+}
+
+#site-header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: cre(30px) cre(15px) 20px;
+  }
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
