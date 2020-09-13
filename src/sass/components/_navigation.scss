@@ -20,11 +20,11 @@
   }
 
   a {
-    color: #20303c;
+    color: $m1;
 
     &:focus,
     &:hover {
-      color: #a749ff
+      color: $m2;
     }
   }
 }
