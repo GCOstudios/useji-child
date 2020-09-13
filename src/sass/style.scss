@@ -32,7 +32,9 @@ Woocommerce Breadcrumbs
 /* ------------------------------------------------------
 Woocommerce styles
 --------------------------------------------------------- */
-@import 'pages/shop';
+@import
+  'pages/shop',
+  'pages/single-product';
 
 /* ------------------------------------------------------
 Homepage Page Template Styles
