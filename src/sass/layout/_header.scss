@@ -31,3 +31,19 @@
     display: none;
   }
 }
+
+#logo {
+  font-size: cre(36px);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+
+  a {
+    color: $m1;
+
+    &:focus,
+    &:hover {
+      color: $m2;
+    }
+  }
+}
