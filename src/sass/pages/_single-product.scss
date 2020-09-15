@@ -1,23 +1,39 @@
 .single-product {
   #page {
-    .article {
+    article {
       width: 100%;
     }
-  }
+  
+    .sidebar {
+      width: 100%;
+      float: left;
+    }
 
-  .yith-wcwl-add-button,
-  .yith-wcwl-wishlistexistsbrowse,
-  .yith-wcwl-wishlistaddedbrowse {
-    font-size: cre(16px);
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding: 10px 0;
-
-    .feedback {
-      display: block;
+    @include breakpoint(900px) {
+      article {
+        width: 73%;
+      }
+    
+      .sidebar {
+        width: 20%;
+        float: right;
+      }
     }
   }
+
+  .product_meta {
+    font-size: cre(16px);
+    border-top: 1px solid #ccc;
+    margin-top: cre(30px);
+    padding-top: cre(10px);
+
+    span {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+
+
 }
 
 .show-title-form {
