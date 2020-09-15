@@ -11,6 +11,7 @@
     display: flex;
 
     li {
+      font-size: cre(16px);
       margin-right: 15px;
 
       &:last-child {
@@ -26,6 +27,11 @@
     &:hover {
       color: $m2;
     }
+  }
+
+  .wpmenucart-contents {
+    font-weight: bold;
+    color: rgb(227, 86, 64);
   }
 }
 
