@@ -18,6 +18,6 @@ get_header('shop'); ?>
 
   <?php // do_action('woocommerce_after_main_content'); ?>
 
-	<?php /*do_action('woocommerce_sidebar');*/ ?>
+	<?php do_action('woocommerce_sidebar'); ?>
 
 <?php get_footer(); ?>
