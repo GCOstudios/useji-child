@@ -1,6 +1,6 @@
 /*!
 Theme Name: useji-child
-Version: 1.0.1
+Version: 1.0.2
 Description: A child theme of Clean by MyThemeShop
 Template: mts_clean
 Text Domain: clean
@@ -20,21 +20,20 @@ Site Header section
 @import 'layout/header';
 
 /* ------------------------------------------------------
-Pimary Site Navigation
+Components
 --------------------------------------------------------- */
-@import 'components/navigation';
-
-/* ------------------------------------------------------
-Woocommerce Breadcrumbs
---------------------------------------------------------- */
-@import 'components/breadcrumb';
+@import
+  'components/navigation',
+  'components/breadcrumb',
+  'components/buttons';
 
 /* ------------------------------------------------------
 Woocommerce styles
 --------------------------------------------------------- */
 @import
   'pages/shop',
-  'pages/single-product';
+  'pages/single-product',
+  'pages/cart';
 
 /* ------------------------------------------------------
 Homepage Page Template Styles
