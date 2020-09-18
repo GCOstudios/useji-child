@@ -15,6 +15,10 @@ function mts_child_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mts_child_enqueue_scripts' );
 
+// Add the shop sidebar widget area
 register_nav_menus( array(
   'shop' => __( 'Shop Menu', 'clean' )
 ) );
+
+// remove the clear variation link
+add_filter('woocommerce_reset_variations_link', '__return_empty_string');
