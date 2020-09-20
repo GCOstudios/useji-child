@@ -1,10 +1,20 @@
 .woocommerce-cart {
 
+  .hero {
+    background-color: $m7;
+    padding: cre(20px) 0;
+    text-align: center;
+
+    .entry-title {
+      margin: 0;
+    }
+  }
+
   .woocommerce {
     display: flex;
     flex-flow: column;
 
-    @include breakpoint(900px) {
+    @include breakpoint(1100px) {
       flex-flow: row wrap;
       justify-content: space-between;
     }
@@ -16,9 +26,8 @@
     .woocommerce-cart-form {
       width: 100%;
 
-      @include breakpoint(900px) {
-        margin-right: cre(10px);
-        width: 70%;
+      @include breakpoint(1100px) {
+        width: calc(100% - 450px);
       }
 
       .shop_table {
@@ -43,13 +52,13 @@
     .cart-collaterals {
       width: 100%;
 
-      @include breakpoint(600px) {
-        width: 35%;
+      @include breakpoint(1100px) {
+        width: cre(420px);
       }
 
-      @include breakpoint(900px) {
-        width: 25%;
-      }
+      // @include breakpoint(900px) {
+      //   width: 25%;
+      // }
 
       .cart_totals {
         width: 100%;
@@ -73,8 +82,17 @@
             border: 0;
             background-color: $m5;
           }
+
+          .shipping_method {
+            margin-bottom: cre(20px);
+          }
+        } // .shop_table
+
+        .woocommerce-shipping-destination {
+          border-top: 1px solid $m1;
+          padding-top: cre(9px);
         }
-      }
+      } // .cart_totals
     }
   }
 }
