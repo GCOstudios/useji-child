@@ -96,3 +96,23 @@
     }
   }
 }
+
+// Checkout page
+// ============================================
+.woocommerce-checkout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#order_review,
+#customer_details {
+  width: 48%;
+}
+
+#order_review {
+
+  h3 {
+    margin-bottom: cre(30px);
+  }
+}
