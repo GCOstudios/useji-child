@@ -1,0 +1,33 @@
+.custom-hero {
+
+  article {
+
+    > header {
+      background-image: url('images/shop-banner-fashion.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: cre(60px);
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      .container {
+        max-width: cre(730px);
+        padding-left: cre(20px);
+        padding-right: cre(20px);
+
+        .entry-title {
+          margin: 0;
+        }
+      }
+    }
+
+    .entry-content {
+      max-width: cre(730px);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: cre(20px);
+      padding-right: cre(20px);
+    }
+  }
+}
