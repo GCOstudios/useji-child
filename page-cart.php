@@ -14,20 +14,20 @@ get_header(); ?>
 
 <?php if ( is_cart() || is_checkout() ) { ?>
 
-  <div class="hero">
-    <h1 class="entry-title"><?php the_title(); ?></h1>
-  </div>
+  <div id="post-<?php the_ID(); ?>" class="custom-cart">
 
-  <div id="page" class="<?php mts_single_page_class(); ?>">
-
-    <article id="post-<?php the_ID(); ?>" class="<?php mts_article_class(); ?>">
+    <article class="<?php mts_article_class(); ?>">
+      <header>
+        <div class="container">
+          <h1 class="entry-title"><?php the_title(); ?></h1>
+        </div>
+      </header>
 
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <?php the_content(); ?>
         
       <?php endwhile; ?>
-
     </article>
 
   <?php get_footer(); ?>
