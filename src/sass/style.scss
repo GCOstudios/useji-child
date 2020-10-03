@@ -31,14 +31,16 @@ Components
 Woocommerce styles
 --------------------------------------------------------- */
 @import
-  'pages/shop',
-  'pages/single-product',
-  'pages/cart';
+  'woocommerce/shop',
+  'woocommerce/single-product',
+  'woocommerce/cart';
 
 /* ------------------------------------------------------
 Homepage Page Template Styles
 --------------------------------------------------------- */
-@import 'pages/homepage';
+@import
+  'pages/homepage',
+  'pages/custom-hero';
 
 /* ------------------------------------------------------
 Site Footer section
