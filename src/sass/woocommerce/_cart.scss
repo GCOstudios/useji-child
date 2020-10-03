@@ -1,18 +1,36 @@
-.woocommerce-cart {
+.custom-cart {
 
-  .hero {
-    background-color: $m7;
-    padding: cre(20px) 0;
-    text-align: center;
+  article {
 
-    .entry-title {
-      margin: 0;
+    > header {
+      float: none;
+      background-image: url('images/shop-banner-fashion.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: cre(60px);
+      padding: cre(40px) 0;
+      text-align: left;
+
+      .container {
+        padding-left: cre(20px);
+        padding-right: cre(20px);
+      }
+  
+      .entry-title {
+        margin: 0;
+      }
     }
   }
 
   .woocommerce {
     display: flex;
     flex-flow: column;
+    max-width: cre(1180px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: cre(20px);
+    padding-right: cre(20px);
 
     @include breakpoint(1100px) {
       flex-flow: row wrap;
