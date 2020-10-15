@@ -80,24 +80,5 @@
           <nav id="shop-navigation" class="navigation">
             <?php wp_nav_menu( array( 'theme_location' => 'shop', 'menu_class' => 'shop-menu', 'container' => '', 'walker' => new mts_menu_walker ) ); ?>
           </nav><!-- END nav -->
-          
-          <?php if ( is_cart() || is_checkout() ) {
-            // we leave blank
-          } else { ?>
-            <div class="custom-menu-cart">
-              <i style="font-size: 18px;margin-right: 10px" class="fa fa-shopping-cart"></i>
-              <a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
-                <?php echo sprintf ( 
-                  _n( 
-                    '%d item', 
-                    '%d items', 
-                    WC()->cart->get_cart_contents_count() ), 
-                    WC()->cart->get_cart_contents_count() 
-                  ); 
-                ?> – <?php // echo WC()->cart->get_cart_total(); ?>
-                <?php echo WC()->cart->get_cart_contents_tax(); ?>
-              </a>
-            </div><!--END .custom-menu-cart -->
-          <?php } ?>
         </div><!--END .container-->
 		</header>
