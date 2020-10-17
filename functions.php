@@ -4,18 +4,26 @@ function mts_child_enqueue_scripts() {
   $parenthandle = 'mts_clean';
   $theme = wp_get_theme();
 
+  // pull in the parent styles
   wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css', 
       array(),
       $theme->parent()->get('Version')
   );
+
+  // pull in custom child styles
   wp_enqueue_style( 'child-style', get_stylesheet_uri(),
       array( $parenthandle ),
       $theme->get('Version')
   );
 
-  wp_enqueue_script('child-js', get_stylesheet_directory_uri() . '/js/custom.min.js', array('jquery'), '1.0.0', true);
+  // dequeue parent js scripts
+  // wp_dequeue_script('customscript');
+  // wp_enqueue_script('child-js', get_stylesheet_directory_uri() . '/js/customscript.min.js', array('jquery'), '1.0.0', true);
+
+  // enqueue custom child js scripts
+  // wp_enqueue_script('child-js', get_stylesheet_directory_uri() . '/js/custom.min.js', array('jquery'), '1.0.0', true);
 }
-add_action( 'wp_enqueue_scripts', 'mts_child_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'mts_child_enqueue_scripts', 20 );
 
 // Add the shop sidebar widget area
 register_nav_menus( array(
