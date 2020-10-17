@@ -20,15 +20,15 @@
 //   }
 // });
 
-const prodTabs = document.querySelectorAll('a[href^="#"]');
+// const prodTabs = document.querySelectorAll('a[href^="#"]');
 
-for (let i = 0; i < prodTabs.length; i++) {
-  prodTabs[i].addEventListener('click', function(e) {
-    e.preventDefault();
+// for (let i = 0; i < prodTabs.length; i++) {
+//   prodTabs[i].addEventListener('click', function(e) {
+//     e.preventDefault();
 
-    let newHash = window.location.hash;
+//     let newHash = window.location.hash;
 
-    // window.location.hash = hash;
-    console.log(this)
-  });
-}
+//     // window.location.hash = hash;
+//     console.log(this)
+//   });
+// }
